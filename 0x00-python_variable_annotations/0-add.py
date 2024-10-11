@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Basic python typing annotation"""
 
+
 def add(a: float, b: float) -> float:
     """
     Explicitly type python function
