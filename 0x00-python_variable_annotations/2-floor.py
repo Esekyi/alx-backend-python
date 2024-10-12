@@ -4,4 +4,8 @@ import math
 
 
 def floor(n: float) -> int:
+    """
+    Explicitly typed function that takes an argument (n) of type
+    float and returns int
+    """
     return math.floor(n)
