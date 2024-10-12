@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-from typing import List
 """
 function which takes in list of floats
 and return the sum of floats
 Returns: float
 """
+from typing import List
+
 
 
 def sum_list(input_list: List[float]) -> float:
@@ -13,4 +14,7 @@ def sum_list(input_list: List[float]) -> float:
     Params: input_list[]
     Returns: float
     """
-    return float(sum(input_list))
+    total: float = 0.0
+    for item in input_list:
+        total += item
+    return total
