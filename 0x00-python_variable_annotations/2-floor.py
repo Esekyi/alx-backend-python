@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
+"""Floor of a given number
+Basic annotations - floor
+"""
 import math
-"""Floor of a given number"""
 
 
 def floor(n: float) -> int:
