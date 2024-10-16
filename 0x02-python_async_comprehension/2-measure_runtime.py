@@ -10,15 +10,10 @@ async def measure_runtime() -> float:
     Measure the runtime of four parallel coroutine
     functions with asyncio.gather - 10sec
     """
-    start_time = time.perf_counter()
+    start_time: float = time.perf_counter()
 
-    await asyncio.gather(
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension()
-    )
+    await asyncio.gather(*(async_comprehension() for _ in range(4)))
 
-    elapsed_time = time.perf_counter() - start_time
+    elapsed_time: float = time.perf_counter() - start_time
 
     return elapsed_time
